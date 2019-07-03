@@ -1,10 +1,11 @@
-.jumbotron{
-	margin-bottom: 0px;
+li a.active {
+  background-color: black;
+  color: white;
 }
 
-.jumbotron img{
-	height: 100px;
-	width: 300px;
+li a:hover:not(.active) {
+  background-color: #555;
+  color: black;
 }
 
 .container p{
