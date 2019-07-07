@@ -14,7 +14,7 @@ $mobilio = mysqli_query($conn, "SELECT * FROM mobilio" );
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin - Blank Page</title>
+  <title>MobilHonda</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -142,7 +142,7 @@ $mobilio = mysqli_query($conn, "SELECT * FROM mobilio" );
 
         <!-- Page Content -->
         <h1 class="text-center">Mobilio</h1>
-        <hr>
+        <a href="tambahmobilio.php" class="btn btn-primary">Tambah Mobilio</a>
         <table class="table">
           <thead>
             <tr>
@@ -157,18 +157,19 @@ $mobilio = mysqli_query($conn, "SELECT * FROM mobilio" );
           <tbody>
             <?php $i = 1; ?>
             <?php foreach ($mobilio as $m) : ?>
-              
-            <td><?= $i; ?></td>
-            <td><?= $m["tipe"]; ?></td>
-            <td><?= $m["harga"]; ?></td>
-            <td><?= $m["spesifikasi"]; ?></td>
-            <td><img src="img/m1.jpg" width="300px"></td>
-            <td>
-              <a href="" class="btn btn-success">Ubah</a>
-              <a href="" class="btn btn-danger">Hapus</a>
-            </td>
-            <?php $i++ ?>
-            <?php endforeach ?>
+              <tr>  
+                <td><?= $i; ?></td>
+                <td><?= $m["tipe"]; ?></td>
+                <td><?= $m["harga"]; ?></td>
+                <td><?= $m["spesifikasi"]; ?></td>
+                <td><img src="img/m1.jpg" width="300px"></td>
+                <td>
+                  <a href="" class="btn btn-success">Ubah</a>
+                  <a href="" class="btn btn-danger">Hapus</a>
+                </td>
+                <?php $i++ ?>
+              <?php endforeach ?>
+            </tr>
           </tbody>
         </table>
 

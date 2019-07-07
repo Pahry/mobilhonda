@@ -100,7 +100,7 @@ $brio=query("SELECT * FROM brio");
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="brio.html">
+        <a class="nav-link" href="brio.php">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Brio</span></a>
       </li>
@@ -120,11 +120,11 @@ $brio=query("SELECT * FROM brio");
           <li class="breadcrumb-item">
             <a href="#">Dashboard</a>
           </li>
-          <li class="breadcrumb-item active">Overview</li>
+          <li class="breadcrumb-item active">Brio</li>
         </ol>
 
         <h1 class="text-center">Data Mobil Honda</h1>    
-          <a href="tambahbrio.php" class="btn btn-primary">Tambah Mobil</a><br>
+          <a href="tambahmobilio.php" class="btn btn-primary">Tambah Mobil Mobilio</a><br>
           
           
             <table class="table">
@@ -147,7 +147,7 @@ $brio=query("SELECT * FROM brio");
                     <td><?= $i; ?></td>
                     <td><?= $b["tipe"]?></td>
                     <td><?= $b["harga"]?></td>
-                    <td width="200px"><?= $b["detail_brio"]?></td>
+                    <td width="200px"><?= $b["spesifikasi"]?></td>
                     <td><img src="img/1.jpg" width="200px"></td>
                     <th>
                       <a class="btn btn-success text-white">Edit</a>
